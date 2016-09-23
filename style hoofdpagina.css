@@ -1,0 +1,258 @@
+body {
+    background-color: #E7E6E9;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-image: url(7772071.jpg);
+    background-repeat: no-repeat;
+    height: 15em;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0.1em 0.1em 0 #233974;
+}
+
+header a img {
+    width: 50px;
+    height: 20px;
+    margin: 0.3em;
+}
+
+header aside {
+    background-color: rgba(35, 57, 116, 0.85);
+    width: 10em;
+    height: 5em;
+    align-self: flex-end;
+    margin-bottom: 1.3em;
+    font-size: 1.3em;
+}
+
+header aside p a {
+    background-color: #FEC818;
+    opacity: 1;
+    padding: 0.5em;
+    margin-left: 7em;
+    display: inline-block;
+    width: 8em;
+    height: 3em;
+    text-align: center;
+    line-height: 3em;
+    font-size: 1.1em;
+}
+
+header aside p {
+    font-size: 0.7em;
+    margin: 1em;
+    color: white;
+}
+
+article {
+    width: 80%;
+    height: inherit;
+    background-color: white;
+    margin: 0;
+    box-shadow: 0 0.1em 0.1em 0 #233974;
+    position: relative;
+}
+
+article p {
+    font-size: 1em;
+    margin: 0.7em;
+    line-height: 1.4em;
+}
+
+article h1 {
+    background-color: #FEC818;
+    padding: 0.3em;
+    margin: 0;
+}
+
+article footer {
+    text-align: center;
+    background-color: #2575BB;
+    height: 2em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+article footer p {
+    color: white;
+}
+
+body > aside {
+    background-color: white;
+    width: 20em;
+    margin-bottom: 1em;
+    box-shadow: 0 0.1em 0.1em 0 #233974;
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+body > aside.open {
+    display: block;
+}
+
+body > aside label {
+    display: block;
+    margin-bottom: 0.1em;
+}
+
+body > aside h1 {
+    margin-bottom: 0.5em;
+    margin-top: 0em;
+    padding-left: 0.1em;
+    background-color: #FEC818;
+}
+
+body > aside h2 {
+    margin: 0;
+}
+
+body > aside div {
+    margin-bottom: 0.5em;
+    padding-left: 2em;
+}
+
+button img {
+    width: 2em;
+    height: 2em;
+    margin: 0;
+}
+
+button {
+    background-color: #2575BB;
+    color: white;
+    padding: 0.5em;
+    font-size: 2em;
+    border: none;
+    cursor: pointer;
+    margin-left: 1em;
+    box-shadow: 0 0.1em 0.1em 0 #233974;
+    align-items: center;
+    height: 2em;
+    width: 4em;
+    z-index: 1;
+    position: relative;
+}
+
+div {
+    margin: 1em;
+}
+
+
+/* http://www.w3schools.com/howto/howto_js_dropdown.asp */
+
+
+/* Dropdown Button */
+
+.dropbtn {
+    background-color: #2575BB;
+    color: white;
+    padding: 0.5em;
+    font-size: 33m;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    box-shadow: 0 0.1em 0.1em 0 #233974;
+    height: 2em;
+    width: 5em;
+    font-size: 2em;
+}
+
+
+/* Dropdown button on hover & focus */
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #2575BB;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+
+.sorteren {
+    position: relative;
+    display: inline-block;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+
+.sorteren-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 12em;
+    box-shadow: 0 0.1em 0.1em 0 #2575BB;
+    z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+
+.sorteren-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Change color of dropdown links on hover */
+
+.sorteren-content a:hover {
+    background-color: #2575BB
+}
+
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+
+.show {
+    display: block;
+}
+
+
+/* t/m hier */
+
+@media (max-width: 49em) {
+    main article {
+        display: block;
+    }
+}
+
+@media (min-width: 50em) {
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    main article {
+        width: 35em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+    header {
+        background-size: 100% auto;
+        background-position: 0 75%;
+    }
+}
+
+@media (min-width: 22em) {
+    header aside {
+        display: flex;
+        height: 7em;
+        width: 22em;
+    }
+}
